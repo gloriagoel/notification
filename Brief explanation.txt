@@ -1,0 +1,26 @@
+In this third assignement, we had to create an hybrid application using cordova.
+
+The first part was about accessing a page through an option in the left panel which displays a date and hour selector. 
+
+First, we had to download and install all the plugins following all the steps of the lectures.
+I installed the sqlite plugin and the cordova-local-notification.
+
+In android studio, I created a Virtual Device taking into acount all the requirements, to 
+simulate a mobile in the computer.
+
+I had modified the index.html file and the config.xml file, and created a new javascript and css 
+document, based on the instructions and help of the w3schools website.
+
+With theme roller website I created a css file, that later I linked to the html document.
+
+First of all, as soon as the init function is triggered, sqllite create a table in the smartphone.
+
+I added three buttons in the panel that do the following actions: Go to the list of notifications, Add notification, delete all notifications.
+
+Finally, I had ran the android project in cordova, until I liked the result obtained and I uploaded the project to github.
+
+I've had several errors, I searched on the internet and I have not been able to solve them. It seems that the code is quite correct but there are times that it doesn't work correctly.
+
+I didn’t have enough time to investigate and understand how sqlite manipulates the result from a select, and I don’t know how the promises exactly work.
+
+

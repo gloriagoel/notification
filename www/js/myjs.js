@@ -2,7 +2,6 @@ function id(element) {
     return document.getElementById(element);
 }
 
-//var db = null;
 
 function init(){
        
@@ -56,7 +55,7 @@ function init(){
 
 function insertDb(dateIn, eventIn){
     db.sqlBatch([
-        ['INSERT INTO notifications VALUES (?,?)', ['Dinner',14/12/2017']]
+        ['INSERT INTO notifications VALUES (?,?)', ['Dinner','14/12/2017']]
     ], function(){
         console.log('insert ok');
     }, function(error){

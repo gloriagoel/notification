@@ -12,30 +12,27 @@
 <body>
 
 
-<!--PAGINA 1-->
+<!--PAGE 1-->
 <div data-role="page" id="page1">
   <div data-role="header">
-    <h1>Notifications App</h1>
+    <a href="#page1" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left"></a>
+	<h1>Notifications App</h1>
   </div>
     <div data-role="panel" id="myPanel">
 		<h2>MENU</h2>
-		<a href="#list" class="ui-btn">List of notifications</a>
-		<a href="#add" class="ui-btn">Add notifications</a>
-		<a href="#delete" class="ui-btn">Delete all notifications</a>
+        <input type="button" value="List of notifications" id="gotoPage2">
+        <input type="button" value="Add notifications" id="add_button">
+		<input type="button" value="Delete all notifications" id="delete_button">
    </div>
    
    <div data-role="main" class="ui-content">
-		<a href="#page1" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+		<a href="#myPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
 	<br><br>
  </div>
   
   <div data-role="main" class="ui-content">
-  
-	<a href="#myPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
-	<br><br>
-  
-  
-    <input type="button" value="Load List of notifications" id="gotoPage2">
+ 
+    <input type="button" value="List of notifications" id="gotoPage2">
 	<input type="button" value="Add notifications" id="add_button">
 	<input type="button" value="Delete all notifications" id="delete_button">
     <div>
@@ -45,51 +42,43 @@
   </div>
 </div> 
 
-<!--PAGINA 2-->
+
+
+
+<!--PAGE 2-->
 <div data-role="page" id="page2">
   <div data-role="header">
-    <h1>My first App</h1>
+  <a href="#page1" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left"></a>
+    <h1>Notifications App</h1>
   </div>
 
    <div data-role="panel" id="myPanel">
 		<h2>MENU</h2>
-		<!--
-		<a href="#list" class="ui-btn">List of notifications</a>
-		<a href="#add" class="ui-btn">Add notifications</a>
-		<a href="#delete" class="ui-btn">Add notifications</a>
-		-->
-		
-		<button class="ui-btn ui-icon-calendar ui-btn-icon-left" id="gotoPage2">Set Notification</button>
-        <input type="button" value="Delete" id="delete_button">
-        <input type="button" value="insert" id="insert_button">
+		<input type="button" value="List of notifications" id="gotoPage2">
+        <input type="button" value="Add notifications" id="add_button">
+		<input type="button" value="Delete all notifications" id="delete_button">
 		
    </div>
   
    <div data-role="main" class="ui-content">
    
-	<a href="#page1" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+	<a href="#myPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
 	<br><br>
-   
-        <input type="button" value="Load List of notifications" id="gotoPage2">
-		<input type="button" value="Add notifications" id="add_button">
-		<input type="button" value="Delete all notifications" id="delete_button">
 	
-		<a href="#myPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
-  <br><br>
   <div data-role="main" class="ui-content">
 		
 		<h4>Add notifications:</h4>
 		<form>
-		<label for="date-1">Date time:  "</label>
+		<label for="date-1">Date time:</label>
 		<input type="datetime-local" name="date-1" id="date-1" value="">
-          <label for="text-basic">Description:</label>
-          <input type="text" name="text-basic" id="description" value="">
-          <button class="ui-btn ui-shadow" style="background-color:skyblue;" id="submit">Submit</button>
-          <input type="button" value="Load List" id="loadListButt">
-          </form>
-          <ul data-role="listview" id="myList">
+        <label for="text-basic">Description:</label>
+        <input type="text" name="text-basic" id="description" value="">
+        <button id="submit">Submit</button>
+        <input type="button" value="Load List" id="loadListButt">
+        </form>
+        <ul data-role="listview" id="myList">
 
-            </ul>
+        </ul>
 		
   </div>
 
